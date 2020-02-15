@@ -7,7 +7,7 @@ import torch.nn.functional as F
 
 
 class BasicConvNet(nn.Module):
-    def __init__(self):
+    def __init__(self,):
         super(BasicConvNet, self).__init__()
         self.conv1 = nn.Conv2d(3, 6, 5)
         self.pool = nn.MaxPool2d(2, 2)

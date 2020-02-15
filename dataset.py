@@ -13,6 +13,8 @@ class loaders():
     def train_loader(self):
         transforms = self.get_transforms(mode='train')
 
+        logging.debug(f"Loading train loader")
+
         train_set = torchvision.datasets.CIFAR10(
             root=self.data_dir,
             train=True,
@@ -34,6 +36,8 @@ class loaders():
             train=False,
             download=True,
             transform=transforms)
+
+        logging.debug(f"Loading train loader")
 
         return torch.utils.data.DataLoader(
             test_set,
