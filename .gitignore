@@ -125,3 +125,9 @@ dmypy.json
 
 # Intellij
 .idea/
+
+
+
+## Project Files
+tb/
+data/
